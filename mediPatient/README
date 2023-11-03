@@ -1,0 +1,56 @@
+Mediscreen application is specialized in detecting risk factors for a disease.
+
+Application allows to detect a level of risk of diabetes in a patient, based on his age, his sex and the different notes left by the doctor
+//////////
+Trello board used to communicate. 
+It lists what stories we are currently working on, plus functionality to complete in future sprints. 
+
+/////////////
+Technical:
+
+JAVA 17
+Maven 4.0.0
+Spring Boot 4.19.0
+Spring Data JPA 3.1.5
+Spring Data MongoDB 4.1.5
+MySQL 8.1.0
+MongoDB 7.0.2
+Spring Cloud openfeign 4.0.4
+Thymeleaf 3.1.2
+Jacoco 0.8.11
+
+/////////////////
+Features
+
+Be able to add patients, modify and delete them.
+Add, edit and delete patient history notes.
+Assess the level of risk of diabetes in patients using the content of the notes.
+
+Storage
+
+Patients are stored in SQL using MySQL.
+Notes are stored in NoSQL using MongoDB.
+
+////////////////////
+URL examples
+
+Application is reachable at URL
+
+http://localhost:8090/
+
+1. 
+Name : Get all patients
+URL :  /patient
+Method : GET
+
+Response (success) : 
+Code : 200
+Response (fail) : none
+
+Note : If there’s no patient returns an empty list
+
+Example: http://localhost:8081/patients
+
+2.
+Example of GET method for URL:note
+http://localhost:8082/notes

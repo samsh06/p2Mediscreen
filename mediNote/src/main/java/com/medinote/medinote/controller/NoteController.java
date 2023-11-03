@@ -28,7 +28,7 @@ import jakarta.validation.Valid;
  * that handles HTTP requests related to note information.
  */
 @RestController
-@RequestMapping
+
 
 public class NoteController {
     /**
