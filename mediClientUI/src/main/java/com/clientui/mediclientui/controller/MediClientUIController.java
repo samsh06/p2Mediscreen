@@ -1,19 +1,5 @@
 package com.clientui.mediclientui.controller;
 
-import java.util.List;
-
-
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
-import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-
 import com.clientui.mediclientui.beans.NoteBean;
 import com.clientui.mediclientui.beans.PatientBean;
 import com.clientui.mediclientui.beans.dto.PatientBeanDto;
@@ -22,6 +8,15 @@ import com.clientui.mediclientui.proxies.NoteProxy;
 import com.clientui.mediclientui.proxies.PatientProxy;
 
 import jakarta.validation.Valid;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 /**
  * This class serves as a controller for the MediClient user interface.

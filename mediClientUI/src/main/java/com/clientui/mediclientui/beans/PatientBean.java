@@ -1,10 +1,7 @@
 package com.clientui.mediclientui.beans;
 
 import java.time.LocalDate;
-
-
 import org.springframework.format.annotation.DateTimeFormat;
-
 import com.clientui.mediclientui.constant.Gender;
 
 import jakarta.validation.constraints.NotBlank;
