@@ -1,5 +1,5 @@
-#Use the OpenJDK 19 image as the base image
-FROM openjdk:19-jdk-alpine
+#Use the OpenJDK 17 image as the base image
+FROM openjdk:17
 
 #Create a new app directory for my application files
 RUN mkdir /application
